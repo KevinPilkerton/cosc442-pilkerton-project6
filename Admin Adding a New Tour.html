@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="http://www.phptravels.net/" />
+<title>Admin Adding New Tour</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">Admin Adding New Tour</td></tr>
+</thead><tbody>
+<tr>
+	<td>open</td>
+	<td>/admin</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=email</td>
+	<td>admin@phptravels.com</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=password</td>
+	<td>demoadmin</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//button[@type='submit']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//ul[@id='social-sidebar-menu']/li[7]/a/i[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Add New</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=tourname</td>
+	<td>Ireland</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=maxadult</td>
+	<td>4</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>name=adultprice</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=adultprice</td>
+	<td>25</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>name=tourstars</td>
+	<td>label=2</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=tourdays</td>
+	<td>21</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=tournights</td>
+	<td>20</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>name=deposittype</td>
+	<td>label=Percentage</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=option[value=&quot;percentage&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=depositvalue</td>
+	<td>10</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>name=taxtype</td>
+	<td></td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>name=taxtype</td>
+	<td>label=Percentage</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=select[name=&quot;taxtype&quot;] &gt; option[value=&quot;percentage&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>name=taxvalue</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=taxvalue</td>
+	<td>10</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=mapaddress</td>
+	<td>Guinness Storehouse, Dublin, Ireland</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=latitude</td>
+	<td>53.341337</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=longitude</td>
+	<td>-6.286882999999989</td>
+</tr>
+<tr>
+	<td>runScript</td>
+	<td>dom=document.getElementById(&quot;locationid1&quot;).setAttribute(&quot;value&quot;, &quot;Dublin, Ireland&quot;);</td>
+	<td></td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>name=tourtype</td>
+	<td>label=Educational</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=add</td>
+	<td></td>
+</tr>
+
+</tbody></table>
+</body>
+</html>
